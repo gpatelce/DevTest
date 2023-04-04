@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Search Public Holidays">
+        <div class="slds-var-m-around_large">
+            <!-- * Input South African ID number -->
+            <div class="slds-p-around_medium">
+            <lightning-layout>
+                <lightning-layout-item size="2" class="slds-m-right_medium">
+                    <lightning-formatted-text class="slds-align_absolute-center" value={textboxlabel}></lightning-formatted-text>
+                </lightning-layout-item>
+                <lightning-layout-item size="7" class="slds-m-right_medium">
+                    <lightning-input type="text"  name="idnumber" placeholder={textboxplaceholder} maxlength="13" pattern="[0-9]{13}" message-when-pattern-mismatch={errormessage} required value={southafricanid} onchange={updateSouthAfricanId} formatter="text" variant="label-hidden"></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" class="slds-m-right_medium">
+                    <lightning-button  disabled={buttontrue} label={buttonname} icon-name="utility:search" variant="brand" onclick={getHolidays}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            </div>
+            <template if:true={displaytable}>
+                 <lightning-datatable key-field="id" data={data} columns={columns} >
+                 </lightning-datatable>
+            </template>
+        </div>
+    </lightning-card> 
+</template>

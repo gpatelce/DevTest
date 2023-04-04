@@ -1,0 +1,66 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"2e60a8b5-8936-489f-9250-b8e033788f4e\",\"columns\":[{\"UUID\":\"f25cd603-3634-4eba-be4d-bbfacae3c4f3\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "richTextValue" : "<p>Our South African ID number is a very important part of our lives and is the key to our access to banking facilities and our daily interaction with retail, medical aid, insurance and travel. This information will help you understand what the numbers in your South African ID represents.</p><p><br></p><p>A South African ID number is a 13-digit number which is defined by the following format: YYMMDDSSSSCAZ.</p><ul><li>The first 6 digits (YYMMDD) are based on your date of birth. 20 February 1992 is displayed as 920220.</li><li>The next 4 digits (SSSS) are used to define your gender.&nbsp;Females are assigned numbers in the range 0000-4999 and males from 5000-9999.</li><li>The next digit (C) shows if you're an SA citizen status with 0 denoting that you were born a SA citizen and 1 denoting that you're a permanent resident.</li><li>The last digit (Z) is a checksum digit – used to check that the number sequence is accurate using a set formula called the Luhn algorithm.</li></ul><p><br></p><p>Additional Info:</p><ol><li><a href=\"https://www.westerncape.gov.za/general-publication/decoding-your-south-african-id-number-0\" rel=\"noopener noreferrer\" target=\"_blank\">Decoding your South African ID number</a></li><li><a href=\"https://calendarific.com/api-documentation\" rel=\"noopener noreferrer\" target=\"_blank\">Calendarific Global Holidays API.</a></li></ol><p><br></p>"
+              },
+              "definition" : "community_builder:richTextEditor",
+              "id" : "cdad0fde-2340-435c-809d-2be98bb4c2a7",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "textboxplaceholder" : "Type 13 digit id here..."
+              },
+              "definition" : "c:publicSearch",
+              "id" : "40b1955e-d5ac-4e33-b0aa-9f43e744431c",
+              "type" : "component"
+            } ],
+            "id" : "f25cd603-3634-4eba-be4d-bbfacae3c4f3",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "2e60a8b5-8936-489f-9250-b8e033788f4e",
+          "type" : "component"
+        } ],
+        "id" : "e71b2033-48f8-4982-8581-e7abb1826ef5",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Home",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "734e5449-7d21-4b51-b40b-cb5434da8c4b",
+          "type" : "component"
+        } ],
+        "id" : "9e27e8a0-8499-4b3c-92fe-dccc16afbc92",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "64d91122-a84d-44fd-b5fe-8fa262d20bc2",
+      "type" : "component"
+    },
+    "themeLayoutType" : "Inner",
+    "viewType" : "home"
+  }
+}

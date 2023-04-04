@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>publicSearch</masterLabel>
+	<description>publicSearch</description>
+	<targets>
+		<target>lightning__RecordPage</target>
+		<target>lightning__AppPage</target>
+		<target>lightning__HomePage</target>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+		<target>lightningCommunity__Page_Layout</target>
+	</targets>
+	<targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__RecordPage,lightning__HomePage,lightningCommunity__Default">
+            <property  name="textboxlabel" type="String" default='Enter South African ID' label="Search Label" description="This Text is used to display on the Search Label "/>
+			<property  name="textboxplaceholder" type="String" default='Type 13 digit id here...' label="Search Box Placeholder" description="Display on the Search box placeholder "/>
+			<property  name="buttonname" type="String" default='Search' label="Button Name" description="This text is used on the Button"/>
+			<property  name="errormessage" type="String" default='Please enter a valid Id' label="Error Message" description="Error Message for invalid entry"/>
+			<property  name="country" type="String" default='za' label="Country ISO Code" description="Country ISO Code to search the holidays"/>
+			<property  name="apikey" type="String" default='9099109241ce859a699364f246419face6b49997' label="API Key" description="Webservices API Key"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
