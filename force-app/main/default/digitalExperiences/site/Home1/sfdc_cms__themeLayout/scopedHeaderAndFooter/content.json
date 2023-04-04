@@ -1,0 +1,72 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Scoped Header and Footer",
+  "contentBody" : {
+    "component" : {
+      "attributes" : { },
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"d308f75b-3235-446b-a685-e0e2dd6f85a9\",\"columns\":[{\"UUID\":\"b85e3741-2aff-4a8b-b957-fb045892b687\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "richTextValue" : "<p><img src=\"{!cmsMedia.MC7GM32P2ILRD3RJZ4ZOPCZW3EHQ}\" alt=\"\" width=\"272\" style=\"\"></p>"
+              },
+              "definition" : "community_builder:richTextEditor",
+              "id" : "aaa9fc6e-ccb0-4adf-9fe4-c14f4bcb6b79",
+              "type" : "component"
+            } ],
+            "id" : "b85e3741-2aff-4a8b-b957-fb045892b687",
+            "name" : "headerSection",
+            "title" : "Theme Header",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "d308f75b-3235-446b-a685-e0e2dd6f85a9",
+          "scopedBrandingSetId" : "Home",
+          "type" : "component"
+        } ],
+        "id" : "18a35684-10a6-4aab-b0cb-dfc817b84666",
+        "name" : "header",
+        "title" : "Theme Header",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"45a1c358-2d57-457c-8fdb-497a17feebe6\",\"columns\":[{\"UUID\":\"e4166b97-0dec-4d7b-a814-556ba5a90211\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "richTextValue" : "<p style=\"text-align: center;\"><br></p>\n<p style=\"text-align: center;\">SFDEVTest © 2023. All rights reserved.</p>\n<p style=\"text-align: center;\"><a href=\"https://www.westerncape.gov.za/about\" rel=\"noopener noreferrer\" target=\"null\" style=\"font-family: inherit; color: rgb(156, 152, 147);\">About Us</a>&nbsp;|&nbsp;<a href=\"https://www.westerncape.gov.za/contact\" rel=\"noopener noreferrer\" target=\"null\" style=\"font-family: inherit; color: rgb(156, 152, 147);\">Contact Us</a>&nbsp;|&nbsp;<a href=\"https://www.westerncape.gov.za/terms/\" rel=\"noopener noreferrer\" target=\"null\" style=\"font-family: inherit; color: rgb(156, 152, 147);\">Terms of Use</a></p>\n<p style=\"text-align: center;\">This project is an initiative of the Western Cape Government.</p>\n<p style=\"text-align: center;\"><a href=\"null\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-family: inherit; color: rgb(0, 20, 137);\"><img src=\"{!cmsMedia.MCI62BKNWCOJA33DVJ3Z5IK56UPE}\" alt=\"\"></a></p>"
+              },
+              "definition" : "community_builder:richTextEditor",
+              "id" : "7a93be0e-682d-4a36-8b76-405b51aa2b29",
+              "type" : "component"
+            } ],
+            "id" : "e4166b97-0dec-4d7b-a814-556ba5a90211",
+            "name" : "footerSection",
+            "title" : "Theme Footer",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "45a1c358-2d57-457c-8fdb-497a17feebe6",
+          "type" : "component"
+        } ],
+        "id" : "85509ba0-7e23-40be-9078-0f41c1090a41",
+        "name" : "footer",
+        "title" : "Theme Footer",
+        "type" : "region"
+      } ],
+      "definition" : "community_byo:scopedHeaderAndFooter",
+      "id" : "775944c4-eb3d-4840-a335-54462925d42a",
+      "type" : "component"
+    }
+  }
+}
